@@ -5,7 +5,7 @@ FROM debian:9.5-slim
 
 RUN    apt-get update              \
     && apt-get upgrade -y          \
-    && apt-get install libxslt -y
+    && apt-get install libxslt1.1 -y
 
 # ADD chekstyle-markdown.xsl /checkstyle-markdown.xsl
 ADD entrypoint.sh /entrypoint.sh
